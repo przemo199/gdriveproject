@@ -4,6 +4,6 @@ import pyAesCrypt
 bufferSize = 64 * 1024
 password = "foopassword"
 # encrypt
-pyAesCrypt.encryptFile('C:\\Users\\przem\\Desktop\\Music\\6IX9INE - PUNANI.flac', "C:\\Users\\przem\\Desktop\\6IX9INE - PUNANI.flac.aes", password, bufferSize)
+pyAesCrypt.encryptFile("data.txt", "data.txt.aes", password, bufferSize)
 # decrypt
-# pyAesCrypt.decryptFile("data.txt.aes", "dataout.txt", password, bufferSize)
+pyAesCrypt.decryptFile("data.txt.aes", "dataout.txt", password, bufferSize)
